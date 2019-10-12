@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import axios from 'axios'
+import vuetify from '@/plugins/vuetify'
 
 import App from './App'
 import router from './router'
@@ -14,5 +15,6 @@ new Vue({
   components: { App },
   router,
   store,
+  vuetify,
   template: '<App/>'
 }).$mount('#app')

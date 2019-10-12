@@ -45,7 +45,7 @@
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
   .title {
     color: #888;
     font-size: 18px;
