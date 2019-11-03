@@ -22,23 +22,25 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { remote } from 'electron'
-import SystemInformation from '@/components/SystemInformation.vue'
+import { Component } from 'vue-property-decorator'
+import SystemInformation from '../components/SystemInformation.vue'
+import Base from '~/core/Base'
 
-export default {
+@Component({
   components: {
     SystemInformation
-  },
-  data () {
-    return {
-      externalContent: ''
-    }
-  },
-  methods: {
-    openURL (url) {
-      remote.shell.openExternal(url)
-    }
+  }
+})
+export default class extends Base {
+  constructor () {
+    super ()
+  }
+  externalContent: string = ''
+
+  openURL (url: string) {
+    remote.shell.openExternal(url)
   }
 }
 </script>
