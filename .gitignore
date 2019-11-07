@@ -1,4 +1,5 @@
 .nuxt
+.idea
 dist
 build/*
 !build/icons
