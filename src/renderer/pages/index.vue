@@ -35,7 +35,7 @@ import Base from '~/core/Base'
 })
 export default class extends Base {
   constructor () {
-    super ()
+    super()
   }
   externalContent: string = ''
 
